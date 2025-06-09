@@ -2,6 +2,7 @@
 using namespace std;
 
 class Node {
+    public:
     int data;
     Node* next1;
     public:
@@ -40,24 +41,21 @@ Node* insertHead(Node* head,int val){
 
 }
 int main() {
-#ifndef ONLINE_JUDGE  
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-#endif
+
 
     vector<int> arr = {12, 5, 6, 7};
     Node* y = new Node(arr[0], nullptr);
     Node* res=convertArr2LL(arr);
     cout<<res->data<<"\n";
-    cout << y->data;
+    cout << y->data<<"\n";
     Node* temp=res;
     while(temp){
         cout<<temp->data<<" ";
         temp=temp->next1;
     }
   Node* result1=  removesHead(res);
-  head=insertHead(res,100);
-  cout<<res;
+  Node* head=insertHead(res,100);
+  cout<<head->data;
 //   cout<<result1->data<<"\n";
     return 0;
 }

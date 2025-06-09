@@ -44,6 +44,7 @@ Node* removesTail(Node* head){
     return head;
 
 };
+
 int main() {
     // Your code goes here
     vector<int> arr = {12, 5, 6, 7};
