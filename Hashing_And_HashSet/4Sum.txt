@@ -1,0 +1,12 @@
+Array nums[n] integers
+It returns all unique quadraplets[nums[a],nums[b],nums[c],nums[d]]
+
+
+a,b,c ,d are distinct
+nums[a]+nums[b]+nums[c]+nums[d]==target
+
+
+Approach:Sort+3ptrs+Binary Search
+
+4 3 3 4 4 2 1 2 1 1
+1 1 1 2 2 3 3 4 4 4
